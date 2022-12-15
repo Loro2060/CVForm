@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Grid"
+             >
+             
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <Grid x:Name="CV">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="500" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView BackgroundColor="#33FCFF" Grid.ColumnSpan="2"/>
+                    
+                    <StackLayout  Grid.ColumnSpan="2" VerticalOptions="Center">
+
+                        <Label x:Name="Nombre1" FontSize="60" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Left"></Label>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1">
+
+                        <Label Text="Edad:" FontSize="30" TextColor="#33FCFF" Padding="1"></Label>
+                        
+                        <StackLayout>
+                            
+                            <Label x:Name="Edad1"/>
+                            
+                        </StackLayout>
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="2">
+
+                        <Label Text="Pais:" FontSize="30" TextColor="#33FCFF" Padding="1"></Label>
+                        
+                        <StackLayout>
+                            <Label x:Name="Procedencia"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="3">
+
+                            <Label Text="Numero:" FontSize="30" TextColor="#33FCFF" Padding="1"></Label>
+                            
+                            <StackLayout>
+                                
+                                <Label x:Name="Numero"/>
+                                
+                            </StackLayout>
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="4">
+
+                            <Label Text="Perfil" FontSize="30" TextColor="#33FCFF" FontAttributes="Bold" Padding="1" ></Label>
+                            <StackLayout x:Name="Ocupaciones">
+                            </StackLayout>
+                        </StackLayout>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </ScrollView>
+            <Button Text="Enviar al email" Clicked="GenerarEmail" FontSize="Medium" BackgroundColor="#33FCFF" TextColor="white" BorderColor="#33FCFF" BorderWidth="1" Margin="20"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

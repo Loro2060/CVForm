@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.MainPage">
+    
+    <StackLayout>
+        
+        <ScrollView>
+
+            <StackLayout>
+
+                <Label Text="Nombre: " FontSize="30" TextColor="#33FCFF"></Label>
+                <Entry Placeholder="Ingresa tu nombre" x:Name="Nombre"></Entry>
+
+                <Label Text="Edad: " FontSize="30" TextColor="#33FCFF"></Label>
+                <Entry Placeholder="Ingresa tu edad" x:Name="Edad"></Entry>
+
+                <Label Text="Nacionalidad: " FontSize="30" TextColor="#33FCFF"></Label>
+                <Entry Placeholder="De donde eres" x:Name="Pais"></Entry>
+
+                <Label Text="Contacto: " FontSize="30" TextColor="#33FCFF"></Label>
+                <Entry Placeholder="Ingresa tu numero celular" x:Name="Numero"></Entry>
+
+                <Label Text="Ocupacion: " FontSize="30" TextColor="#33FCFF"></Label>
+                <StackLayout x:Name="ocupacion">
+                    <Entry Placeholder="Dinos, a que te dedicas" x:Name="Ocupacion"></Entry>
+                </StackLayout>
+                <Button Text="+" Clicked="Button_Ocupacion"/>
+
+
+
+                <Button Text="Submit" Clicked="Button_Clicked" BackgroundColor="#33FCFF" TextColor="White"/>
+            </StackLayout>
+
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
